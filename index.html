@@ -27,17 +27,22 @@
       height: 40px;
     }
   }
+      .logo img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
   </style>
 </head>
 <body class="text-white">
 
   <!-- Header -->
-  <header class="bg-white text-purple-900 py-6 shadow-lg">
-    <div class="container mx-auto px-6 flex justify-between items-center">
-        <div class="logo">
-            <img src="logo.png" alt="KerjainAja Logo" />
-          </div>
-      <nav class="space-x-4">
+  <header class="bg-white text-purple-900 py-4 shadow-lg">
+    <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+      <div class="logo">
+        <img src="logo.png" alt="KerjainAja Logo" class="h-10 sm:h-12" />
+      </div>
+      <nav class="flex flex-wrap gap-4 justify-center sm:justify-end text-sm sm:text-base">
         <a href="#layanan" class="hover:underline">Layanan</a>
         <a href="#order" class="hover:underline">Order</a>
         <a href="#kontak" class="hover:underline">Kontak</a>
