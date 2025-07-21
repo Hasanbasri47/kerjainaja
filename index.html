@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KerjainAja.Official - Jasa Joki Tugas</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #4B0082, #00BFFF);
+    }
+    h1, h2, h3, p {
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+    .logo img {
+    height: 48px; /* Sesuaikan tinggi logo */
+    width: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: 640px) {
+    .logo img {
+      height: 40px;
+    }
+  }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- Header -->
+  <header class="bg-white text-purple-900 py-6 shadow-lg">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        <div class="logo">
+            <img src="logo.png" alt="KerjainAja Logo" />
+          </div>
+      <nav class="space-x-4">
+        <a href="#layanan" class="hover:underline">Layanan</a>
+        <a href="#order" class="hover:underline">Cara Order</a>
+        <a href="#kontak" class="hover:underline">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 px-6" data-aos="fade-up">
+    <h1 class="text-4xl sm:text-5xl font-bold mb-4">Selamat Datang di <span class="text-yellow-300">KerjainAja.Official</span></h1>
+    <p class="max-w-xl mx-auto text-lg text-white mb-6">Solusi terpercaya untuk bantu tugas sekolah & kuliahmu!</p>
+    <button onclick="openModal()" class="bg-yellow-400 text-purple-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition">Order Sekarang</button>
+</section>
+
+  </section>
+
+  <!-- Layanan -->
+  <section id="layanan" class="bg-white text-purple-900 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-right">Layanan Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-purple-100 p-6 rounded-2xl shadow-md" data-aos="zoom-in">
+          <i class="fas fa-book-open text-4xl mb-4 text-purple-700"></i>
+          <h3 class="text-xl font-bold mb-2">Tugas Sekolah</h3>
+          <p>Kami bantu selesaikan tugas harian, makalah, dan presentasi untuk siswa SMP-SMA.</p>
+        </div>
+        <div class="bg-purple-100 p-6 rounded-2xl shadow-md" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-laptop-code text-4xl mb-4 text-purple-700"></i>
+          <h3 class="text-xl font-bold mb-2">Tugas Kuliah</h3>
+          <p>Mengerjakan laporan, jurnal, coding, analisis data, skripsi, dan lainnya.</p>
+        </div>
+        <div class="bg-purple-100 p-6 rounded-2xl shadow-md" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-chart-line text-4xl mb-4 text-purple-700"></i>
+          <h3 class="text-xl font-bold mb-2">Revisi & Konsultasi</h3>
+          <p>Layanan revisi tugas serta konsultasi 1-on-1 untuk memahami materi tugasmu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cara Order -->
+  <section id="order" class="text-white py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">Cara Order</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white text-purple-900 p-5 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-comments text-3xl mb-2 text-purple-700"></i>
+          <h3 class="font-bold text-xl mb-1">1. Konsultasi</h3>
+          <p>Konsultasikan kebutuhan tugas kamu via WhatsApp atau Instagram.</p>
+        </div>
+        <div class="bg-white text-purple-900 p-5 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-upload text-3xl mb-2 text-purple-700"></i>
+          <h3 class="font-bold text-xl mb-1">2. Kirim Tugas</h3>
+          <p>Kirim file tugas dan detail pengerjaan yang diinginkan.</p>
+        </div>
+        <div class="bg-white text-purple-900 p-5 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-money-bill-wave text-3xl mb-2 text-purple-700"></i>
+          <h3 class="font-bold text-xl mb-1">3. Pembayaran</h3>
+          <p>Lakukan pembayaran via e-wallet atau bank transfer.</p>
+        </div>
+        <div class="bg-white text-purple-900 p-5 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-check-circle text-3xl mb-2 text-purple-700"></i>
+          <h3 class="font-bold text-xl mb-1">4. Tugas Selesai</h3>
+          <p>Tugas dikirim tepat waktu, kamu tinggal terima beres!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="bg-white text-purple-900 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-right">Testimoni</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-purple-100 p-6 rounded-xl shadow" data-aos="flip-left">
+          <p>"Sangat membantu untuk tugas skripsi saya. Hasilnya berkualitas dan sesuai deadline. Recommended banget!"</p>
+          <span class="block mt-2 font-semibold">– Ayu, Mahasiswa</span>
+        </div>
+        <div class="bg-purple-100 p-6 rounded-xl shadow" data-aos="flip-left" data-aos-delay="200">
+          <p>"Adminnya ramah, tugas selesai cepat dan rapi. Harganya juga terjangkau."</p>
+          <span class="block mt-2 font-semibold">– Budi, Pelajar SMA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="text-white py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8" data-aos="fade-down">Hubungi Kami</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-xl mx-auto">
+        <a href="https://wa.me/6288999982003" class="bg-green-500 p-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg" data-aos="zoom-in">
+          <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+        </a>
+        <a href="mailto:kerjainaja@example.com" class="bg-blue-500 p-4 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-envelope mr-2"></i> Email
+        </a>
+        <a href="https://instagram.com/kerjainaja.official" class="bg-pink-500 p-4 rounded-xl font-bold hover:bg-pink-600 transition shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fab fa-instagram mr-2"></i> Instagram
+        </a>
+      </div>
+      <!-- Info Tambahan -->
+<div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-xl mx-auto text-purple-900">
+    <div class="bg-white p-4 rounded-xl shadow-md" data-aos="fade-up">
+      <h4 class="font-bold text-lg mb-1">Jam Operasional</h4>
+      <p>Senin – Minggu: 08.00 – 22.00 WIB</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+      <h4 class="font-bold text-lg mb-1">Kecepatan Respon Admin</h4>
+      <p>± 5 – 15 menit (jam kerja aktif)</p>
+    </div>
+  </div>  
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-purple-900 py-4 text-center">
+    <p>&copy; 2025 KerjainAja.Official. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <!-- Modal Order -->
+  <div id="orderModal" class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-xl p-8 max-w-lg w-full text-gray-800 relative">
+      <button onclick="closeModal()" class="absolute top-2 right-4 text-xl text-gray-500 hover:text-red-500">&times;</button>
+      <h2 class="text-2xl font-bold mb-4 text-purple-700">Formulir Order</h2>
+      <form id="orderForm">
+        <input type="text" id="name" placeholder="Nama Lengkap" class="w-full mb-3 px-4 py-2 border rounded-lg" required>
+        <input type="text" id="task" placeholder="Jenis Tugas (Makalah, Coding, dll)" class="w-full mb-3 px-4 py-2 border rounded-lg" required>
+        <input type="email" id="email" placeholder="Email Aktif" class="w-full mb-3 px-4 py-2 border rounded-lg" required>
+        <textarea id="desc" placeholder="Deskripsi Permintaan" class="w-full mb-3 px-4 py-2 border rounded-lg" rows="4" required></textarea>
+        <button type="submit" class="bg-purple-700 text-white px-6 py-2 rounded-lg hover:bg-purple-800 w-full">Kirim Order</button>
+      </form>      
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function openModal() {
+      document.getElementById('orderModal').classList.remove('hidden');
+      document.getElementById('orderModal').classList.add('flex');
+    }
+
+    function closeModal() {
+      document.getElementById('orderModal').classList.add('hidden');
+    }
+  </script>
+<script>
+    AOS.init();
+  
+    function openModal() {
+      const modal = document.getElementById('orderModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  
+    function closeModal() {
+      const modal = document.getElementById('orderModal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+  
+    // Kirim data ke WhatsApp saat form disubmit
+    document.getElementById("orderForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      const name = document.getElementById("name").value.trim();
+      const task = document.getElementById("task").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const desc = document.getElementById("desc").value.trim();
+  
+      const message = `Halo Admin! Saya ingin order jasa dari KerjainAja.\n\n` +
+                      `Nama: ${name}\nJenis Tugas: ${task}\nEmail: ${email}\n` +
+                      `Deskripsi: ${desc}`;
+  
+      const encodedMessage = encodeURIComponent(message);
+      const phoneNumber = "6288999982003"; // ← Ubah ke nomor WA kamu
+  
+      // Buka WhatsApp Web atau App
+      window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+  
+      closeModal();
+    });
+  </script>
+  
+</body>
+</html>
